@@ -1,7 +1,7 @@
 const request = require('request')
 
 
-// const url = 'http://api.weatherstack.com/current?access_key=48f003a56c4cc3bc3e2a6a09621cd7ee&query=37.8267,-122.4233&units=s'
+// const url = 'http://api.weatherstack.com/current?access_token=<YOUR ACCESS TOKEN>&query=37.8267,-122.4233'
 
 // request({url: url, json: true}, (error, response) => {
 //     if (error) {
@@ -16,7 +16,7 @@ const request = require('request')
 //     }
 // })
 
-const mapurl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=pk.eyJ1IjoieWFsZWN0bWFwIiwiYSI6ImNsa3RoeXJwejAwMTUzbG9qOXUyaW14bnYifQ.YzQKpAMShpxsN_GflNt23w&limit=1'
+const mapurl = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Los%20Angeles.json?access_token=<YOUR ACCESS TOKEN>'
 
 request({ url: mapurl, json: true }, (error, response) => {
     if (error) {
